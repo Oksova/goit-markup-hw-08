@@ -1,0 +1,47 @@
+.works {
+  padding-top: 0;
+}
+.works-list {
+  display: flex;
+
+  & .item {
+    position: relative;
+    width: 370px;
+  }
+  & .item.item:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+.container .works-title {
+  margin-top: 0;
+  margin-bottom: 50px;
+}
+.works-title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-align: center;
+}
+.action-title {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  right: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 27px;
+  padding-bottom: 27px;
+  border-radius: 0px 0px 4px 4px;
+
+  color: $whitecolor;
+  background-color: rgba(47, 48, 58, 0.8);
+  font-size: 14px;
+  line-height: 1.14;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}

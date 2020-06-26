@@ -1,0 +1,37 @@
+.features-list {
+  display: flex;
+  flex-wrap: wrap;
+
+  & .title {
+    margin-top: 30px;
+    margin-bottom: 10px;
+  }
+
+  & .item {
+    width: 270px;
+  }
+}
+
+.features-list .item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.background {
+  @include centeredFlex();
+
+  width: 270px;
+  height: 120px;
+  background-color: #f5f4fa;
+  border-radius: 4px;
+}
+
+.features-text {
+  margin-top: 0;
+  margin-bottom: 0;
+  color: $secondaryTextColor;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+}
