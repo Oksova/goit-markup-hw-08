@@ -11,7 +11,7 @@
   padding: 0;
   text-align: center;
 
-  max-width: 1600px;
+  // max-width: 1600px;
   height: 600px;
   background-color: coral;
   background-image: linear-gradient(
@@ -49,7 +49,7 @@
 
   &:hover,
   &:focus {
-    color: var(--primary-text-color);
+    color: $textcolor;
     cursor: pointer;
   }
 }

@@ -1,6 +1,12 @@
 .features-list {
-  display: flex;
-  flex-wrap: wrap;
+  @media screen and(max-width:767 px) {
+    display: block;
+  }
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+  }
 
   & .title {
     margin-top: 30px;
@@ -8,21 +14,40 @@
   }
 
   & .item {
-    width: 270px;
+    @media screen and (min-width: 768px) {
+      width: calc((100% - 4 * 15px) / 2);
+      margin: 15px;
+    }
+    @media screen and (min-width: 1200px) {
+      width: calc((100% - 8 * 15px) / 4);
+    }
   }
 }
 
 .features-list .item:not(:last-child) {
-  margin-right: 30px;
+  @media screen and (max-width: 767px) {
+    margin-bottom: 30px;
+  }
 }
 
 .background {
   @include centeredFlex();
 
-  width: 270px;
-  height: 120px;
   background-color: #f5f4fa;
   border-radius: 4px;
+
+  @media screen and (max-width: 767px) {
+    width: 450px;
+    height: 120px;
+  }
+  @media screen and (min-width: 768px) {
+    width: 354px;
+    height: 120px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 270px;
+    height: 120px;
+  }
 }
 
 .features-text {
