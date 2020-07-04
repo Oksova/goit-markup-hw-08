@@ -1,13 +1,25 @@
 .portfolio-content {
-  padding-top: 93px;
+  padding-top: 60px;
+
+  @media screen and(min-width:1200px) {
+    padding-top: 93px;
+  }
 }
 .selection {
+  display: flex;
+  flex-wrap: wrap;
   margin: 0;
   padding-left: 0;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
+
+  @media screen and(min-width:768px) {
+    @include centeredFlex();
+    margin-bottom: 30px;
+  }
 
   @media screen and(min-width:1200px) {
     @include centeredFlex();
+    margin-bottom: 50px;
   }
 
   & .button {
@@ -29,6 +41,12 @@
 
 .selection .button-list:not(:last-child) {
   margin-right: 8px;
+}
+
+.selection .button-list :nth-child(-n + 3) {
+  @media screen and(max-width:767px) {
+    margin-bottom: 15px;
+  }
 }
 .selection .button:hover,
 .selection .button:focus {
@@ -52,18 +70,36 @@
 }
 
 .projects {
-  // display: flex;
-  // flex-wrap: wrap;
   margin: 0;
   padding-left: 0;
-  padding-bottom: 94px;
+  padding-bottom: 60px;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 94px;
+  }
 
   & .item {
-    width: calc((100% - 60px) / 3);
-    margin-right: 30px;
     margin-bottom: 30px;
     box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06),
       0px 1px 1px rgba(0, 0, 0, 0.12);
+
+    @media screen and(min-width:768px) {
+      width: calc((100% - 60px) / 2);
+      margin-right: 30px;
+      margin-bottom: 30px;
+    }
+    @media screen and(min-width:1200px) {
+      width: calc((100% - 60px) / 3);
+      margin-right: 30px;
+      margin-bottom: 30px;
+    }
   }
 }
 .projects .item:nth-child(3n) {
