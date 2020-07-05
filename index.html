@@ -62,7 +62,7 @@
 
     <main>
       <section class="hero">
-        <div class="hero-container">
+        <div class="container">
         <h1 class="main-title">
           Эффективные решения
           <br />
@@ -175,13 +175,18 @@
           <h2 class="team-title">Наша команда</h2>
           <ul class="team-list list">
             <li class="item">
+              <div class="team-thumb">
               <img
-                class="team-photo"
-                src="./img/john.jpg"
-                width="270"
-                height="260"
-                alt="Фото члена команды"/>
-
+                class="team-photo"            
+                srcset="
+                ./img/john/john.jpg 1x,
+                ./img/john/john@2x.jpg 2x,
+                ./img/john/john@3x.jpg 3x
+              "
+              src="./img/john/john.jpg"
+              alt="Фото члена команды"
+                />
+               </div>
               <h3 class="name-title">John Smith</h3>
               <p class="team-text">Product designer</p>
               <ul class="social-links">
@@ -217,14 +222,18 @@
             </li>
 
             <li class="item">
+              <div class="team-thumb">
               <img
                 class="team-photo"
-                src="./img/marta.jpg"
-                width="270"
-                height="260"
+                srcset="
+                ./img/marta/marta.jpg 1x,
+                ./img/marta/marta@2x.jpg 2x,
+                ./img/marta/marta@3x.jpg 3x
+              "
+              src="./img/marta/marta.jpg"
                 alt="Фото члена команды"
               />
-
+                </div>
               <h3 class="name-title">Marta Stewart</h3>
               <p class="team-text">Frontend Developer</p>
               <ul class="social-links">
@@ -260,13 +269,18 @@
             </li>
 
             <li class="item">
+              <div class="team-thumb">
               <img
                 class="team-photo"
-                src="./img/robert.jpg"
-                width="270"
-                height="260"
+                srcset="
+                ./img/robert/robert.jpg 1x,
+                ./img/robert/robert@2x.jpg 2x,
+                ./img/robert/robert@3x.jpg 3x
+              "
+              src="./img/robert/robert.jpg"
                 alt="Фото члена команды"
               />
+            </div>
 
               <h3 class="name-title">Robert Jakis</h3>
               <p class="team-text">Marketing</p>
@@ -303,13 +317,18 @@
             </li>
 
             <li class="item">
+              <div class="team-thumb">
               <img
                 class="team-photo"
-                src="./img/martin.jpg"
-                width="270"
-                height="260"
+                srcset="
+                ./img/martin/martin.jpg 1x,
+                ./img/martin/martin@2x.jpg 2x,
+                ./img/martin/martin@3x.jpg 3x
+              "
+              src="./img/martin/martin.jpg"
                 alt="Фото члена команды"
               />
+            </div>
 
               <h3 class="name-title">Martin Doe</h3>
               <p class="team-text">UI Designer</p>

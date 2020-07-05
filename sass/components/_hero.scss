@@ -14,6 +14,10 @@
   max-width: 1600px;
   background-color: coral;
 
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
   @media screen and (max-width: 480px) {
     background-image: linear-gradient(
         to right,
@@ -21,7 +25,6 @@
         rgba(47, 48, 58, 0.8)
       ),
       url('../img/hero480.jpg');
-    background-size: 480px 400px;
   }
   @media (min-resolution: 2dppx) {
     .hero {
@@ -31,7 +34,6 @@
           rgba(47, 48, 58, 0.8)
         ),
         url('../img/hero480@2x.jpg');
-      background-size: 480px 400px;
     }
   }
   @media screen and(max-width:767px) {
@@ -41,7 +43,6 @@
         rgba(47, 48, 58, 0.8)
       ),
       url('../img/hero768.jpg');
-    background-size: 768px 400px;
   }
   @media (min-resolution: 2dppx) {
     .hero {
@@ -51,7 +52,6 @@
           rgba(47, 48, 58, 0.8)
         ),
         url('../img/hero768@2x.jpg');
-      background-size: 768px 400px;
     }
   }
   @media screen and(min-width:768px) {
@@ -61,7 +61,6 @@
         rgba(47, 48, 58, 0.8)
       ),
       url('../img/hero1200.jpg');
-    background-size: 1200px 400px;
   }
   @media (min-resolution: 2dppx) {
     .hero {
@@ -71,7 +70,6 @@
           rgba(47, 48, 58, 0.8)
         ),
         url('../img/hero1200@2x.jpg');
-      background-size: 1200px 600px;
     }
   }
 }

@@ -3,7 +3,7 @@
   min-height: 60px;
 
   @media screen and(min-width:768px) {
-    align-items: baseline;
+    align-items: center;
     justify-content: center;
     min-height: 80px;
   }
@@ -13,7 +13,7 @@
   margin-right: auto;
   margin-left: auto;
   display: flex;
-  align-items: baseline;
+  align-items: center;
   justify-content: space-between;
 
   @media screen and(min-width:768px) {
@@ -22,7 +22,6 @@
     justify-content: center;
   }
 }
-
 .nav-container {
   @media screen and(min-width:768px) {
     @include centeredFlex(flex);
@@ -56,11 +55,12 @@
 }
 
 .menu-button {
-  display: inline-flex;
+  display: block;
   margin: 0;
   padding: 0;
   border: none;
   background-color: transparent;
+  fill: currentColor;
 
   @media screen and (min-width: 768px) {
     display: none;
@@ -76,10 +76,19 @@
   display: none;
 }
 
+.icon-menu:hover,
+.icon-menu:focus {
+  fill: #2196f3;
+}
+.icon-close:hover,
+.icon-close:focus {
+  fill: #2196f3;
+}
 .site-nav {
   @media screen and(min-width:768px) {
     display: flex;
     align-items: center;
+    justify-content: center;
 
     & .item:not(:last-child) {
       margin-right: 50px;
