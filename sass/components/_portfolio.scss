@@ -167,6 +167,9 @@
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
   background: $whitecolor;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .project-title {
